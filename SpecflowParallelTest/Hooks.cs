@@ -141,7 +141,7 @@ namespace SpecflowParallelTest
                 case BrowserType.Firefox:
                     var driverDir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                     FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(driverDir, "geckodriver.exe");
-                    service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
+                    service.FirefoxBinaryPath = @"C:\Program Files\Mozilla Firefox\firefox.exe";
                     service.HideCommandPromptWindow = true;
                     service.SuppressInitialDiagnosticInformation = true;
                     _driver = new FirefoxDriver(service);
